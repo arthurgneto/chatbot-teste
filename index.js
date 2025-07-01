@@ -33,11 +33,13 @@ const menu = `🏋️ *ACADEMIA TESTE* – Escolha uma opção:
 
 create({
   session: 'aquafitness',
-  headless: false,
-  useChrome: true,
+  headless: true,
+  puppeteerOptions: {
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  },
+  useChrome: false,
   catchQR: (base64Qr, asciiQR) => {
-    console.clear();
-    console.log('📲 Escaneie o QR Code abaixo para conectar o WhatsApp:\n');
+    console.log('Escaneie o QR Code:');
     console.log(asciiQR);
   },
 })
