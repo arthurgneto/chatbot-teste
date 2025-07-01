@@ -124,7 +124,7 @@ create({
         case '6':
           return client.sendText(contato, `👦 *Natação Infantil + Funcional Kids*\n\n2x Mensal: R$ 195,00\n3x Mensal: R$ 240,00\n2x Semestral: R$ 180,00\n3x Semestral: R$ 225,00`);
         case '7':
-          return client.sendText(contato, `💼 *Serviços*\n\n📌 Taxa de Avaliação Inicial: R$ 35,00\n📌 Taxa de Matrícula: R$ 20,00`);
+          return client.sendText(contato, `💼 *Serviços*\n\n📌 Taxa de Avaliação Inicial: R$ 35,00\n📌 Taxa de Matrícula: R$ 20,00.`);
         case '8':
           return client.sendText(contato, `🧪 *Avaliações*\n\n📊 Avaliação Física: R$ 100,00\n🥗 Avaliação Nutricional: R$ 250,00`);
         case '9':
